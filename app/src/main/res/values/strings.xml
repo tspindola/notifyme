@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NotifyMe</string>
+
+    <string name="navigation_new_package">Novo Pacote</string>
+
+    <string name="hint_name">Nome do destinatário</string>
+    <string name="hint_trackingno">Número do pacote</string>
+    <string name="hint_carrier">Nome do remetente</string>
+    <string name="hint_shelf">Localização do pacote</string>
+    <string name="hint_observations">Observações</string>
+
+    <string name="special_handling">Cuidados Especiais</string>
+    <string name="urgent">Urgente</string>
+    <string name="fragile">Frágil</string>
+    <string name="heavy">Pesado</string>
+    <string name="perishable">Perecível</string>
+
+    <string name="pictures">Fotos</string>
+    <string name="add">Adicionar</string>
+</resources>
