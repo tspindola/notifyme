@@ -2,6 +2,7 @@
     <string name="app_name">NotifyMe</string>
 
     <string name="navigation_new_package">Novo Pacote</string>
+    <string name="navigation_package_out">Saída de Pacote</string>
 
     <string name="hint_name">Nome do destinatário</string>
     <string name="hint_trackingno">Número do pacote</string>

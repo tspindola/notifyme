@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class AlbumsFragment : Fragment() {
+class PackageOutFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-            inflater.inflate(R.layout.fragment_albums, container, false)
+            inflater.inflate(R.layout.fragment_package_out, container, false)
 
     companion object {
-        fun newInstance(): AlbumsFragment = AlbumsFragment()
+        fun newInstance(): PackageOutFragment = PackageOutFragment()
     }
 }

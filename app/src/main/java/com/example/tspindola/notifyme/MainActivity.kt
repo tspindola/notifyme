@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_albums -> {
                 toolbar.title = "Albums"
-                val albumsFragment = AlbumsFragment.newInstance()
+                val albumsFragment = PackageOutFragment.newInstance()
                 openFragment(albumsFragment)
                 return@OnNavigationItemSelectedListener true
             }
