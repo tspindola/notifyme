@@ -36,6 +36,9 @@ class PackageInFragment : Fragment(), View.OnClickListener {
                 addNewPackage()
                 clearFields()
             }
+            else -> {
+
+            }
         }
     }
 

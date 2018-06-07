@@ -21,19 +21,17 @@
             android:id="@+id/input_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants"
             android:hint="@string/hint_name"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_layout_trackingno"
-        android:layout_width="match_parent"
+        android:layout_width="286dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_layout_name">
 
@@ -42,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_trackingno"
+            android:importantForAutofill="noExcludeDescendants"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
@@ -61,6 +60,7 @@
             android:id="@+id/input_carrier"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants"
             android:hint="@string/hint_carrier"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
@@ -81,6 +81,7 @@
             android:id="@+id/input_shelf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants"
             android:hint="@string/hint_shelf"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
@@ -152,6 +153,7 @@
             android:id="@+id/input_observations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants"
             android:hint="@string/hint_observations"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
@@ -170,5 +172,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_layout_observations"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageview_scanner"
+        android:layout_width="65dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_layout_shelf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/input_layout_trackingno"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_name"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_barcode" />
 
 </android.support.constraint.ConstraintLayout>

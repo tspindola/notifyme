@@ -22,6 +22,7 @@
             android:id="@+id/input_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:importantForAutofill="noExcludeDescendants"
             android:hint="@string/hint_search_package"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
