@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
                 openFragment(songsFragment)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_albums -> {
-                toolbar.title = "Albums"
+            R.id.navigation_package_out -> {
+                toolbar.title = "Saida de Pacote"
                 val albumsFragment = PackageOutFragment.newInstance()
                 openFragment(albumsFragment)
                 return@OnNavigationItemSelectedListener true

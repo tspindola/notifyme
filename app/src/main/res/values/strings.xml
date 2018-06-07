@@ -9,6 +9,7 @@
     <string name="hint_carrier">Nome do remetente</string>
     <string name="hint_shelf">Localização do pacote</string>
     <string name="hint_observations">Observações</string>
+    <string name="hint_search_package">Digite um nome para buscar pacotes</string>
 
     <string name="special_handling">Cuidados Especiais</string>
     <string name="urgent">Urgente</string>
