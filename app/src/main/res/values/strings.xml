@@ -19,4 +19,9 @@
 
     <string name="pictures">Fotos</string>
     <string name="add">Adicionar</string>
+
+    <string name="packages_selected">Pacotes selecionados</string>
+    <string name="packages_status">Status sobre a entrega</string>
+    <string name="photo_evidences">Evidências</string>
+    <string name="register_checkout">Registrar Entrega</string>
 </resources>

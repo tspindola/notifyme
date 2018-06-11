@@ -13,7 +13,10 @@ import android.text.SpannableString
 import android.text.style.StyleSpan
 
 
-class PackageAdapter(val items : MutableList<Package>, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
+class PackageAdapter(val items : MutableList<Package>,
+                     val context: Context,
+                     val listener: (Int) -> Unit)
+    : RecyclerView.Adapter<ViewHolder>() {
 
     override fun getItemCount(): Int {
         return items.size
@@ -31,6 +34,14 @@ class PackageAdapter(val items : MutableList<Package>, val context: Context) : R
         holder.tvNameInfo?.text = Html.fromHtml(nameBold)
         holder.tvTrackingInfo?.text = Html.fromHtml(trackingnoBold)
         holder.tvCarrierInfo?.text = Html.fromHtml(carrierBold)
+
+        holder.itemView.setOnClickListener{handleItemClick(position,holder.itemView)}
+    }
+
+    fun handleItemClick(position: Int,v: View){
+        val s = context.getResources().getColor(R.color.item_selected)
+        v.setBackgroundColor(s)
+        listener(position)
     }
 }
 
